@@ -1,17 +1,13 @@
 :root {
   --bg: linear-gradient(135deg, #5f2cff, #3aa0ff);
-  --card: rgba(255,255,255,0.15);
+  --card: rgba(255, 255, 255, 0.15);
   --text: #ffffff;
 }
 
 [data-theme="light"] {
-  --bg: #f2f2f2;
+  --bg: #f4f6fb;
   --card: #ffffff;
   --text: #000000;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -32,43 +28,26 @@ header {
 
 .actions {
   display: flex;
+  gap: .5rem;
   justify-content: center;
   flex-wrap: wrap;
-  gap: .5rem;
   margin-top: 1rem;
 }
 
-.btn {
-  padding: .8rem 1.3rem;
-  border-radius: 12px;
+.btn, .card {
+  padding: 0.9rem 1.2rem;
+  border-radius: 14px;
   background: var(--card);
   color: inherit;
-  border: none;
   text-decoration: none;
+  border: none;
   cursor: pointer;
 }
 
 main {
+  padding: 2rem;
   display: grid;
   gap: 1rem;
-  padding: 2rem;
-}
-
-.card {
-  text-align: center;
-  padding: 1.5rem;
-  border-radius: 16px;
-  background: var(--card);
-  text-decoration: none;
-  color: inherit;
-}
-
-footer {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: .85rem;
-  opacity: .8;
-  padding-bottom: 1rem;
 }
 
 @media (min-width: 700px) {
